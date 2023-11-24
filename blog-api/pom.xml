@@ -10,9 +10,9 @@
     </parent>
     <groupId>top.naccl</groupId>
     <artifactId>blog-api</artifactId>
+    <packaging>jar</packaging>
     <version>0.0.1</version>
     <name>blog-api</name>
-    <url>https://naccl.top/</url>
     <description>Blog API</description>
 
     <properties>
@@ -138,12 +138,6 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-        <!-- 又拍云存储SDK -->
-        <dependency>
-            <groupId>com.upyun</groupId>
-            <artifactId>java-sdk</artifactId>
-            <version>4.2.3</version>
-        </dependency>
         <!-- hutool-crypto -->
         <dependency>
             <groupId>cn.hutool</groupId>
@@ -157,17 +151,6 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
 
